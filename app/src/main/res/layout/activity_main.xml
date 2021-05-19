@@ -8,7 +8,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
+        <fragment
+            android:id="@+id/titleFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.devjay.androidtrivia.TitleFragment"
+            tools:layout="@layout/fragment_title"/>
 
     </LinearLayout>
 
