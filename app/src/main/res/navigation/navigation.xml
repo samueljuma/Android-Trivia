@@ -22,19 +22,33 @@
         tools:layout="@layout/fragment_game">
         <action
             android:id="@+id/action_gameFragment_to_gameWonFragment"
-            app:destination="@id/gameWonFragment" />
+            app:destination="@id/gameWonFragment"
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_gameFragment_to_gameOverFragment"
-            app:destination="@id/gameOverFragment" />
+            app:destination="@id/gameOverFragment"
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/gameWonFragment"
         android:name="com.devjay.androidtrivia.GameWonFragment"
         android:label="GameWonFragment"
-        tools:layout="@layout/fragment_game_won"/>
+        tools:layout="@layout/fragment_game_won">
+        <action
+            android:id="@+id/action_gameWonFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/titleFragment" />
+    </fragment>
     <fragment
         android:id="@+id/gameOverFragment"
         android:name="com.devjay.androidtrivia.GameOverFragment"
         android:label="GameOverFragment"
-        tools:layout="@layout/fragment_game_over"/>
+        tools:layout="@layout/fragment_game_over">
+        <action
+            android:id="@+id/action_gameOverFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/titleFragment" />
+    </fragment>
 </navigation>
