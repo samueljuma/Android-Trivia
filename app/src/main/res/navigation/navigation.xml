@@ -19,5 +19,22 @@
         android:id="@+id/gameFragment"
         android:name="com.devjay.androidtrivia.GameFragment"
         android:label="GameFragment"
-        tools:layout="@layout/fragment_game"/>
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_gameWonFragment"
+            app:destination="@id/gameWonFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameWonFragment"
+        android:name="com.devjay.androidtrivia.GameWonFragment"
+        android:label="GameWonFragment"
+        tools:layout="@layout/fragment_game_won"/>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.devjay.androidtrivia.GameOverFragment"
+        android:label="GameOverFragment"
+        tools:layout="@layout/fragment_game_over"/>
 </navigation>
