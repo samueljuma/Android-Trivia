@@ -21,10 +21,10 @@ class TitleFragment : Fragment() {
         val binding: FragmentTitleBinding = DataBindingUtil.inflate(inflater,
             R.layout.fragment_title,container,false)
         // navigate
-        binding.playButton.setOnClickListener{view: View ->
-            // utilizing ktx libraries
-            view.findNavController().navigate(R.id.action_titleFragment_to_gameFragment)
-        }
+        binding.playButton.setOnClickListener(
+            // navigation can also create a listener
+            Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
+        )
         return binding.root
     }
 
