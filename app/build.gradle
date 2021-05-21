@@ -2,7 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
-    id("androidx.navigation.safeargs")
+    id 'androidx.navigation.safeargs'
 
 }
 
@@ -55,7 +55,10 @@ dependencies {
     implementation"androidx.navigation:navigation-dynamic-features-fragment:$version_navigation"
     // Testing Navigation
     androidTestImplementation"androidx.navigation:navigation-testing:$version_navigation"
+    // navigation UI
+    implementation "androidx.navigation:navigation-ui-ktx:$version_navigation"
     // Jetpack Compose Integration
     implementation"androidx.navigation:navigation-compose:2.4.0-alpha01"
+
 
 }
