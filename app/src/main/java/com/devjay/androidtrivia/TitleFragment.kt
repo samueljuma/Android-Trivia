@@ -23,7 +23,7 @@ class TitleFragment : Fragment() {
         // navigate
         binding.playButton.setOnClickListener(
             // navigation can also create a listener
-            Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
+            Navigation.createNavigateOnClickListener(TitleFragmentDirections.actionTitleFragmentToGameFragment())
         )
         setHasOptionsMenu(true)
         return binding.root
