@@ -1,8 +1,8 @@
 ## Android Trivia
 A clone of the Android Trivia App based on Lesson 3: Navigation from [Developing Android Apps With Kotlin][1] on Udacity
 ### Assets
-* [Fragments] [2]
-* [DataBindingUtil] [3]
+* [Fragments][2]
+* [DataBindingUtil][3]
 * [Navigation][4]
 
 ### Screenshots
