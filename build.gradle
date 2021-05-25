@@ -3,6 +3,7 @@ buildscript {
     ext{
         kotlin_version = "1.4.32"
         version_navigation = "2.3.5"
+        version_material = "1.2.0"
 
     }
     repositories {
